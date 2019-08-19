@@ -1,0 +1,113 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+#bar {
+  position: absolute;
+  bottom: 0;
+  left: 220px;
+}
+
+.none,
+.underweight,
+.overweight,
+.fit {
+  width: 90px;
+  /* border-radius: 5px; */
+}
+
+.none {
+  display: hidden;
+  height: 0;
+}
+
+.underweight {
+  height: 100px;
+  background-color: #42a5f5;
+  animation: underweight 3s 1;
+}
+@keyframes underweight {
+  0% {
+    height: 50px;
+    background-color: #42a5f5;
+  }
+  100% {
+    height: 100px;
+    background-color: #42a5f5;
+  }
+}
+
+.overweight {
+  height: 300px;
+  background-color: #f44336;
+  animation: overweight 3s 1;
+}
+
+@keyframes overweight {
+  0% {
+    height: 0;
+    background-color: #42a5f5;
+  }
+  50% {
+    height: 150px;
+    background-color: #1b5e20;
+  }
+  /* 75% {
+    height: 200px;
+    background-color: #1b5e20;
+  } */
+  100% {
+    height: 300px;
+    background-color: #f44336;
+  }
+}
+
+.fit {
+  height: 150px;
+  background-color: #1b5e20;
+  animation: fit 3s 1;
+}
+@keyframes fit {
+  0% {
+    height: 0;
+    background-color: #42a5f5;
+  }
+  100% {
+    height: 150px;
+    background-color: #1b5e20;
+  }
+}
+/* 
+.bounce {
+  animation: bounce 5s 1;
+}
+
+@keyframes bounce {
+  0% {
+    height: 300px;
+    background-color: #f44336;
+  }
+  25% {
+    height: 200px;
+    background-color: #f44336;
+  }
+  50% {
+    height: 150px;
+    background-color: #1b5e20;
+  }
+  75% {
+    height: 120px;
+    background-color: #1b5e20;
+  }
+  100% {
+    height: 100px;
+    background-color: #42a5f5;
+  }
+} */

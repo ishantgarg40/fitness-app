@@ -1,0 +1,14 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0 auto;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+}
